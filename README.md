@@ -36,3 +36,7 @@ Kensho.rule.import(ruleBook)
 ## isNumber(value: number)
 
 value is number.
+
+## isInteger(value: number)
+
+value is integer.
