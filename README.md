@@ -31,3 +31,8 @@ const ruleBook = require('@yokotak0527/kensho-rulebook-default')
 Kensho.rule.import(ruleBook)
 ```
 
+# rule list
+
+## isNumber(value: number)
+
+value is number.
