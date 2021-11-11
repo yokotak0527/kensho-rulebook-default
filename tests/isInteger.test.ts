@@ -15,7 +15,7 @@ describe('isInteger', () => {
   })
 
   test('false : pass the not number', ()=>{
-    expect(isInteger('1')).toBeFalsy()
+    expect(isInteger('1' as unknown as number)).toBeFalsy()
   })
 
   test('false : pass the decimal', ()=>{
