@@ -3,7 +3,7 @@ declare namespace Kensho {
     /**
      * value is number
      */
-    'isNumber': (value:any)=>boolean
+    'isNumber': (value:number)=>boolean
     /**
      * EN : value is integer. ex, -2, -1, 0, 1, 2...  
      * JP : 値が整数である。例 -2, -1, 0, 1, 2...

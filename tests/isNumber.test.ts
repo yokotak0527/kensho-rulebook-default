@@ -10,6 +10,6 @@ describe('isNumber', ()=>{
   })
 
   test('pass the not number', ()=>{
-    expect(isNumber('1')).toBeFalsy()
+    expect(isNumber('1' as unknown as number)).toBeFalsy()
   })
 })
