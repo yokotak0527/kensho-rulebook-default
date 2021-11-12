@@ -6,6 +6,7 @@ import isNegativeInteger from './isNegativeInteger'
 import isPositiveInteger from './isPositiveInteger'
 import isNaturalNumber from './isNaturalNumber'
 import isAge from './isAge'
+import isString from './isString'
 
 const book:Kensho.RuleBook = {
   isNumber,
@@ -15,7 +16,8 @@ const book:Kensho.RuleBook = {
   isNegativeInteger,
   isPositiveInteger,
   isNaturalNumber,
-  isAge
+  isAge,
+  isString
 }
 
 export default book

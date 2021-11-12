@@ -91,3 +91,7 @@ The value is valid for age.
 | option prop. | type      | default | desc. |
 |--------------|-----------|---------|-------|
 | `max`        | `number`  | `125`   | upper limit for age. include this value. |
+
+## isString(value: string)
+
+The value is a string.

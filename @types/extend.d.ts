@@ -75,5 +75,10 @@ declare namespace Kensho {
         max? : number
       }
     )=>boolean
+    /**
+     * EN : value is a string..
+     * JP : 値は文字列である
+     */
+    'isString': (value: string)=>boolean
   }
 }
