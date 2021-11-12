@@ -37,6 +37,24 @@ Kensho.rule.import(ruleBook)
 
 The value is a number.
 
+## isNegativeNumber(value: number, option:Object)
+
+The value is a negative number.  
+ex. zero, -1, -1.1, -3, -4...
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `zero`       | `boolean` | `false` | include 0 as negative number. |
+
+## isPositiveNumber(value: number, option:Object)
+
+The value is a positive number.  
+ex. zero, 1, 1.1, 3, 4...
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `zero`       | `boolean` | `true`  | include 0 as positive number. |
+
 ## isInteger(value: number)
 
 The value is an integer.

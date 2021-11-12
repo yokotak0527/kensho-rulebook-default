@@ -5,13 +5,35 @@ declare namespace Kensho {
      */
     'isNumber': (value: number)=>boolean
     /**
+     * EN : value is position number. ex, zero, 1, 1.1, 2...  
+     * JP : 値は正数である 例 zero, 1, 1.1, 2...  
+     */
+    'isPositiveNumber' : (
+      value: number,
+      option: {
+        /** include 0. default `true` */
+        zero?: boolean
+      }
+    )=>boolean
+    /**
+     * EN : value is negative number. ex, zero, -1, -1.1, -2...  
+     * JP : 値は負数である 例 zero, -1, -1.1, -2...  
+     */
+    'isNegativeNumber' : (
+      value: number,
+      option: {
+        /** include 0. default `false` */
+        zero?: boolean
+      }
+    )=>boolean
+    /**
      * EN : value is integer. ex, -2, -1, 0, 1, 2...  
-     * JP : 値が整数である。例 -2, -1, 0, 1, 2...
+     * JP : 値は整数である。例 -2, -1, 0, 1, 2...
      */
     'isInteger': (value: number)=>boolean
     /**
      * EN : value is negative integer. ex, zero, -1, -2, -3...  
-     * JP : 値が負の整数である 例 zero, -1, -2, -3...
+     * JP : 値は負の整数である 例 zero, -1, -2, -3...
      */
     'isNegativeInteger': (
       value: number,
@@ -22,7 +44,7 @@ declare namespace Kensho {
     )=>boolean
     /**
      * EN : value is negative integer. ex, zero, 1, 2, 3...  
-     * JP : 値が正の整数である 例 zero, 1, 2, 3...
+     * JP : 値は正の整数である 例 zero, 1, 2, 3...
      */
     'isPositiveInteger': (
       value: number,
@@ -33,7 +55,7 @@ declare namespace Kensho {
     )=>boolean
     /**
      * EN : value is natural number. ex, zero, 1, 2, 3...  
-     * JP : 値が自然数である 例 zero, 1, 2, 3...
+     * JP : 値は自然数である 例 zero, 1, 2, 3...
      */
     'isNaturalNumber': (
       value: number,
