@@ -21,6 +21,17 @@ declare namespace Kensho {
       }
     )=>boolean
     /**
+     * EN : value is negative integer. ex, 1, 2, 3...  
+     * JP : 値が正の整数である 例 1, 2, 3...
+     */
+    'isPositiveInteger': (
+      value: number,
+      option: {
+        /** include 0. default `true` */
+        zero? : boolean
+      }
+    )=>boolean
+    /**
      * EN : value is natural number. ex, 1, 2, 3...  
      * JP : 値が自然数である 例 1, 2, 3...
      */
