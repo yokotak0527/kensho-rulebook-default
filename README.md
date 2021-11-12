@@ -40,3 +40,12 @@ value is number.
 ## isInteger(value: number)
 
 value is integer.
+
+## isNaturalNumber(value: number, option: Object)
+
+value is natural number.  
+ex. 1, 2, 3, 4...
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `zero`       | `boolean` | `true`  | include 0 as natural number. |
