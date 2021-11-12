@@ -40,6 +40,7 @@ value is number.
 ## isInteger(value: number)
 
 value is integer.
+
 ## isNegativeInteger(value: number, option: Object)
 
 value is negative integer.  
@@ -49,10 +50,19 @@ ex. -1, -2, -3, -4...
 |--------------|-----------|---------|-------|
 | `zero`       | `boolean` | `false` | include 0 as negative integer. |
 
+## isPositiveInteger(value: number, option: Object)
+
+value is positive integer.  
+ex. 0, 1, 2, 3, 4...
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `zero`       | `boolean` | `true`  | include 0 as positive integer. |
+
 ## isNaturalNumber(value: number, option: Object)
 
-value is natural number.  
-ex. 1, 2, 3, 4...
+value is natural number.This is as alias for `isPositiveInteger()`.  
+ex. 0, 1, 2, 3, 4...
 
 | option prop. | type      | default | desc. |
 |--------------|-----------|---------|-------|

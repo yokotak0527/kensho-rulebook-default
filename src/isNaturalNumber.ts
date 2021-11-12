@@ -1,16 +1,7 @@
-import isInteger from './isInteger'
+import isPositiveInteger from './isPositiveInteger'
 
-const isNaturalNumber:Kensho.RuleBook['isNaturalNumber'] = function isNatualNumber(value, option = {}) {
-  if (!isInteger(value)) return false
-
-  /** include 0 */
-  const zero = option.zero ?? true
-
-  if (zero) {
-    return value >= 0
-  } else {
-    return value > 0
-  }
+const isNaturalNumber:Kensho.RuleBook['isPositiveInteger'] = function isNatualNumber(value, option = {}) {
+  return isPositiveInteger(value, option)
 }
 
 export default isNaturalNumber
