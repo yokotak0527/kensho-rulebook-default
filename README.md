@@ -18,8 +18,6 @@ $ npm i @yokotak0527/kensho-rulebook-default
 
 # Usage
 
-## CommonJS
-
 ```js
 import Kensho from '@yokotak0527/kensho'
 import ruleBook from '@yokotak0527/kensho-rulebook-default'
