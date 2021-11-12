@@ -35,15 +35,15 @@ Kensho.rule.import(ruleBook)
 
 ## isNumber(value: number)
 
-value is number.
+The value is a number.
 
 ## isInteger(value: number)
 
-value is integer.
+The value is an integer.
 
 ## isNegativeInteger(value: number, option: Object)
 
-value is negative integer.  
+The value is a negative integer.  
 ex. -1, -2, -3, -4...
 
 | option prop. | type      | default | desc. |
@@ -52,7 +52,7 @@ ex. -1, -2, -3, -4...
 
 ## isPositiveInteger(value: number, option: Object)
 
-value is positive integer.  
+The value is a positive integer.  
 ex. 0, 1, 2, 3, 4...
 
 | option prop. | type      | default | desc. |
@@ -61,9 +61,17 @@ ex. 0, 1, 2, 3, 4...
 
 ## isNaturalNumber(value: number, option: Object)
 
-value is natural number.This is as alias for `isPositiveInteger()`.  
+The value is a natural number. This is as alias for `isPositiveInteger()`.  
 ex. 0, 1, 2, 3, 4...
 
 | option prop. | type      | default | desc. |
 |--------------|-----------|---------|-------|
 | `zero`       | `boolean` | `true`  | include 0 as natural number. |
+
+## isAge(value: number, option: Object)
+
+The value is valid for age.
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `max`        | `number`  | `125`   | upper limit for age. include this value. |

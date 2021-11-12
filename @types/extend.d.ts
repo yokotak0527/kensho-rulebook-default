@@ -10,8 +10,8 @@ declare namespace Kensho {
      */
     'isInteger': (value: number)=>boolean
     /**
-     * EN : value is negative integer. ex, -1, -2, -3...  
-     * JP : 値が負の整数である 例 -1, -2, -3...
+     * EN : value is negative integer. ex, zero, -1, -2, -3...  
+     * JP : 値が負の整数である 例 zero, -1, -2, -3...
      */
     'isNegativeInteger': (
       value: number,
@@ -21,8 +21,8 @@ declare namespace Kensho {
       }
     )=>boolean
     /**
-     * EN : value is negative integer. ex, 1, 2, 3...  
-     * JP : 値が正の整数である 例 1, 2, 3...
+     * EN : value is negative integer. ex, zero, 1, 2, 3...  
+     * JP : 値が正の整数である 例 zero, 1, 2, 3...
      */
     'isPositiveInteger': (
       value: number,
@@ -32,14 +32,25 @@ declare namespace Kensho {
       }
     )=>boolean
     /**
-     * EN : value is natural number. ex, 1, 2, 3...  
-     * JP : 値が自然数である 例 1, 2, 3...
+     * EN : value is natural number. ex, zero, 1, 2, 3...  
+     * JP : 値が自然数である 例 zero, 1, 2, 3...
      */
     'isNaturalNumber': (
       value: number,
       option: {
         /** include 0. default `true` */
         zero? : boolean
+      }
+    )=>boolean
+    /**
+     * EN : value is valid for age. ex. 0, 1, 2...max  
+     * JP : 値は年齢として妥当である。 例 0, 1, 2...max
+     */
+    'isAge': (
+      value: number,
+      option: {
+        /** upper limit for age. include this value. default `125` */
+        max? : number
       }
     )=>boolean
   }
