@@ -40,6 +40,14 @@ value is number.
 ## isInteger(value: number)
 
 value is integer.
+## isNegativeInteger(value: number, option: Object)
+
+value is negative integer.  
+ex. -1, -2, -3, -4...
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `zero`       | `boolean` | `false` | include 0 as negative integer. |
 
 ## isNaturalNumber(value: number, option: Object)
 

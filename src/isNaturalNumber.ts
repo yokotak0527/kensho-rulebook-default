@@ -6,7 +6,6 @@ const isNaturalNumber:Kensho.RuleBook['isNaturalNumber'] = function isNatualNumb
   /** include 0 */
   const zero = option.zero ?? true
 
-  console.log(value, value > 0)
   if (zero) {
     return value >= 0
   } else {
