@@ -17,6 +17,6 @@ describe('isPositiveNumber', ()=>{
     expect(isPositiveNumber('' as unknown as number, {})).toBeFalsy()
     expect(isPositiveNumber(null as unknown as number, {})).toBeFalsy()
     expect(isPositiveNumber(undefined as unknown as number, {})).toBeFalsy()
-    expect(isPositiveNumber(NaN, {})).toBeFalsy()
+    expect(isPositiveNumber(NaN as unknown as number, {})).toBeFalsy()
   })
 })

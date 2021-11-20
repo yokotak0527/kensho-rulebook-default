@@ -6,6 +6,6 @@ describe('isString', ()=>{
   })
 
   test('pas the not string', ()=>{
-    expect(isString(1 as unknown as string)).toBeFalsy()
+    expect(isString(1)).toBeFalsy()
   })
 })

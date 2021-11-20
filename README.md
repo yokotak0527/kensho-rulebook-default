@@ -95,3 +95,12 @@ The value is valid for age.
 ## isString(value: string)
 
 The value is a string.
+
+## regexp(value: string, option: Object)
+
+The value matches a regular expression.   
+Returns `true` if no regular expression is specified in `option.regexp`.
+
+| option prop. | type      | default | desc. |
+|--------------|-----------|---------|-------|
+| `regexp`     | `RegExp`  |         | Returns `true` if no regular expression is specified in `option.regexp`. |
