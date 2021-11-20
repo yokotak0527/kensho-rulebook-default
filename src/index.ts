@@ -1,15 +1,16 @@
-import isNumber from './isNumber'
-import isString from './isString'
-import isNegativeNumber from './isNegativeNumber'
-import isPositiveNumber from './isPositiveNumber'
-import isInteger from './isInteger'
+import isNumber          from './isNumber'
+import isString          from './isString'
+import isNegativeNumber  from './isNegativeNumber'
+import isPositiveNumber  from './isPositiveNumber'
+import isInteger         from './isInteger'
 import isNegativeInteger from './isNegativeInteger'
 import isPositiveInteger from './isPositiveInteger'
-import isNaturalNumber from './isNaturalNumber'
-import isAge from './isAge'
-import regexp from './regexp'
-import isEmpty from './isEmpty'
-import exists from './exists'
+import isNaturalNumber   from './isNaturalNumber'
+import isAge             from './isAge'
+import regexp            from './regexp'
+import isEmpty           from './isEmpty'
+import exists            from './exists'
+import isEmail           from './isEmail'
 
 const book:Kensho.RuleBook = {
   isNumber,
@@ -23,7 +24,8 @@ const book:Kensho.RuleBook = {
   isAge,
   regexp,
   isEmpty,
-  exists
+  exists,
+  isEmail
 }
 
 export default book

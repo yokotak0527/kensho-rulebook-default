@@ -115,3 +115,7 @@ If you pass other then above types, returns `false`.
 
 The value is existed.  
 Returns the opposite result of `isEmpty()`.
+
+## isEmail(value: string)
+
+The value is valid as e-mail address.

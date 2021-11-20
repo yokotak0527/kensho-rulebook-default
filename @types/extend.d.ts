@@ -111,5 +111,10 @@ declare namespace Kensho {
      *      isEmpty() の反対の結果を返します。
      */
     'exists': (value: any)=>boolean
+    /**
+     * EN : The value is valid as e-mail address.
+     * JP : 値はメールアドレスとして妥当である。
+     */
+    'isEmail': (value: string)=>boolean
   }
 }
