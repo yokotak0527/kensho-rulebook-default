@@ -116,5 +116,15 @@ declare namespace Kensho {
      * JP : 値はメールアドレスとして妥当である。
      */
     'isEmail': (value: string)=>boolean
+    /**
+     * EN : The value same as `option.isSame`.
+     * JP : 値は `option.same` と同じである。
+     */
+    'equal': <V = any>(
+      value: V,
+      option: {
+        isSame?: V
+      }
+    )=> boolean
   }
 }

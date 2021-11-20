@@ -4,16 +4,8 @@
 
 # Install
 
-## npm
-
 ```
 $ npm i @yokotak0527/kensho-rulebook-default
-```
-
-## CDN
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@yokotak0527/kensho-rulebook-default/dist/bundle.iife.min.js"></script>
 ```
 
 # Usage
@@ -119,3 +111,12 @@ Returns the opposite result of `isEmpty()`.
 ## isEmail(value: string)
 
 The value is valid as e-mail address.
+
+## equal(value: any, option: Object)
+
+The value same as `option.isSame`.  
+This is depend on [fast-deep-equal](https://www.npmjs.com/package/fast-deep-equal).
+
+| option prop. | type           | default | desc. |
+|--------------|----------------|---------|-------|
+| `isSame`     | `typeof value` |         |       |

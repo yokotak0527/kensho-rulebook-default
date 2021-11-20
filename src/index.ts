@@ -11,6 +11,7 @@ import regexp            from './regexp'
 import isEmpty           from './isEmpty'
 import exists            from './exists'
 import isEmail           from './isEmail'
+import equal             from './equal'
 
 const book:Kensho.RuleBook = {
   isNumber,
@@ -25,7 +26,8 @@ const book:Kensho.RuleBook = {
   regexp,
   isEmpty,
   exists,
-  isEmail
+  isEmail,
+  equal
 }
 
 export default book
