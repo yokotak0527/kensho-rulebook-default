@@ -104,3 +104,14 @@ Returns `true` if no regular expression is specified in `option.regexp`.
 | option prop. | type      | default | desc. |
 |--------------|-----------|---------|-------|
 | `regexp`     | `RegExp`  |         | Returns `true` if no regular expression is specified in `option.regexp`. |
+
+## isEmpty(value: any)
+
+The value is empty.  
+Support types are `undefined`, `null`, `string`, `Array<any>`, `Object`.
+If you pass other then above types, returns `false`.
+
+## exists(value: any)
+
+The value is existed.  
+Returns the opposite result of `isEmpty()`.

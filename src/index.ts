@@ -8,6 +8,8 @@ import isPositiveInteger from './isPositiveInteger'
 import isNaturalNumber from './isNaturalNumber'
 import isAge from './isAge'
 import regexp from './regexp'
+import isEmpty from './isEmpty'
+import exists from './exists'
 
 const book:Kensho.RuleBook = {
   isNumber,
@@ -19,7 +21,9 @@ const book:Kensho.RuleBook = {
   isPositiveInteger,
   isNaturalNumber,
   isAge,
-  regexp
+  regexp,
+  isEmpty,
+  exists
 }
 
 export default book
