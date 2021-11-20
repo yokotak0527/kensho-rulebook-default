@@ -31,7 +31,7 @@ Kensho.rule.import(ruleBook)
 
 # rule list
 
-## isNumber(value: number)
+## isNumber(value: unknown)
 
 The value is a number.
 
@@ -92,7 +92,7 @@ The value is valid for age.
 |--------------|-----------|---------|-------|
 | `max`        | `number`  | `125`   | upper limit for age. include this value. |
 
-## isString(value: string)
+## isString(value: unknown)
 
 The value is a string.
 
