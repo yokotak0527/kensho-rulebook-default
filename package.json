@@ -1,6 +1,6 @@
 {
   "name": "@yokotak0527/kensho-rulebook-default",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/bundle.cjs.js",
   "module": "./dist/bundle.es.js",
