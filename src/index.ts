@@ -12,6 +12,7 @@ import isEmpty           from './isEmpty'
 import exists            from './exists'
 import isEmail           from './isEmail'
 import equal             from './equal'
+import isZero            from './isZero'
 
 const book:Kensho.RuleBook = {
   isNumber,
@@ -27,7 +28,8 @@ const book:Kensho.RuleBook = {
   isEmpty,
   exists,
   isEmail,
-  equal
+  equal,
+  isZero
 }
 
 export default book

@@ -126,5 +126,10 @@ declare namespace Kensho {
         isSame?: V
       }
     )=> boolean
+    /**
+     * EN : The value is 0.
+     * JP : 値は 0 である。
+     */
+    'isZero': (value: number)=> boolean
   }
 }

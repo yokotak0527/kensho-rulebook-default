@@ -120,3 +120,8 @@ This is depend on [fast-deep-equal](https://www.npmjs.com/package/fast-deep-equa
 | option prop. | type           | default | desc. |
 |--------------|----------------|---------|-------|
 | `isSame`     | `typeof value` |         |       |
+
+## isZero(value: number)
+
+The value is 0.
+
