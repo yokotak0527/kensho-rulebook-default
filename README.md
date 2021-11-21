@@ -125,3 +125,13 @@ This is depend on [fast-deep-equal](https://www.npmjs.com/package/fast-deep-equa
 
 The value is 0.
 
+## words(value: string, option: Object)
+
+The words is between `option.min` and `option.max`.  
+If you pass `option.min` as negative number, throw Error.  
+If you pass number to `option.max` less than `option.min`, throw Error.
+
+| option prop. | type   | default | desc. |
+|--------------|--------|---------|-------|
+| `min`        | number | 0       |       |
+| `max`        | number | -1      | -1 means do not use.  |

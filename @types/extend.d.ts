@@ -131,5 +131,25 @@ declare namespace Kensho {
      * JP : 値は 0 である。
      */
     'isZero': (value: number)=> boolean
+    /**
+     * EN : The words is between `option.min` and `option.max`.  
+     *      Default values are `option.min=0`, `option.max=-1`.  
+     *      -1 means do not use.  
+     *      If you pass `option.min` as negative number, throw Error.
+     *      If you pass number to `option.max` less than `option.min`, throw Error.
+     * -------------------------------------------------------------------------
+     * JP : 値は `option.min` から `option.max` までの数値である。  
+     *      デフォルト値は `option.min=0`, `option.max=-1` です。  
+     *      -1 は使用しないことを意味します。  
+     *      `option.min` が負の数値を指定した場合はエラーを投げます。
+     *      `option.max` が `option.min` より小さい数値を指定した場合はエラーを投げます。
+     */
+    'words': (
+      value: string,
+      option: {
+        min? : number,
+        max? : number
+      }
+    )=> boolean
   }
 }

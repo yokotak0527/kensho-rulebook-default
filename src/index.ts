@@ -13,6 +13,7 @@ import exists            from './exists'
 import isEmail           from './isEmail'
 import equal             from './equal'
 import isZero            from './isZero'
+import words             from './words'
 
 const book:Kensho.RuleBook = {
   isNumber,
@@ -29,7 +30,8 @@ const book:Kensho.RuleBook = {
   exists,
   isEmail,
   equal,
-  isZero
+  isZero,
+  words
 }
 
 export default book
