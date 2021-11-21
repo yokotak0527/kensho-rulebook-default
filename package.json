@@ -4,12 +4,10 @@
   "description": "",
   "main": "./dist/bundle.cjs.js",
   "module": "./dist/bundle.es.js",
-  "browser": "./dist/bundle.umd.js",
   "exports": {
     "import": "./dist/bundle.es.js",
     "require": "./dist/bundle.cjs.js",
     "node": "./dist/bundle.es.js",
-    "browser": "./dist/bundle.umd.js",
     "default": "./dist/bundle.cjs.js"
   },
   "types": "index.d.ts",
